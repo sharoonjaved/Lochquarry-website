@@ -1,0 +1,850 @@
+/*  Universal Selector - Reset all html elements to the following */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+}
+
+/* set the html tag to max-width of the screen */
+html {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Section */
+
+/* Style the header section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    padding: 15px;
+}
+
+/* Menu Container (left/right) */
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.search-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.search-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* logo container */
+.logo {
+    display: flex;
+    justify-content: center; 
+    flex: 0 0 auto;
+}
+.logo img {
+    width: 200px; 
+    display: block;
+}
+/* Menu Items */
+.nav-menu {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+/* Set the width of the navigation 100% of the remaining space */
+.header-nav {
+    width: 100%;
+}
+
+/* Set the unorder list to display flex and change flow to horizontal */
+/* move the content to the end and set the gap between children to 20px */
+.header-ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Remove underline from links */
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Pseudo-Class hover */
+a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* remove bullet point */
+li {
+    list-style-type: none;
+}
+
+/* End of Header Section */
+
+/* Main Section */
+
+/* Hero Section */
+
+.hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+/* Style Book Now Button */
+.cta-button {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF914C;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF914C;
+}
+
+/* Floating Window Styling */
+.floating-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1001; /* Ensure it's on top */
+    padding: 15px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.floating-header {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #FF914C;
+}
+
+.floating-header .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FF914C;
+}
+
+.floating-header .close-btn:hover {
+    color: #E6833B;
+}
+
+/* Booking form inside floating window */
+#booking-form input,
+#booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#booking-form button[type="submit"] {
+    background-color: #FF914C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#booking-form button[type="submit"]:hover {
+    background-color: #E6833B;
+}
+
+#booking-form button[type="button"] {
+    background-color: #ddd;
+    color: #333;
+    font-weight: normal;
+}
+
+#booking-form button[type="button"]:hover {
+    background-color: #ccc;
+}
+
+/* End of Hero Section */
+
+.activities h1 {
+    padding: 20px;
+    text-align: center;
+}
+.lochquarry-activities {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+}
+.activity-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    flex-shrink: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.activity-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.activity-content h1 {
+    margin: 0;
+}
+.activity-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.activity-content li {
+    position: relative;
+}
+.activity-content li::before {
+    content: "•";
+    color: #000;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;  
+    padding: 0 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+}
+
+.card-image,
+.card-content {
+    padding-bottom: 50px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card:nth-child(even) img {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-content {
+    width: 100%;
+}
+
+.card-content h2 {
+    padding-bottom: 20px;
+}
+
+/* Video Section Styling */
+.video-container {
+    position: relative; 
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(244, 243, 243);
+    padding: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 30px;
+    height: auto;
+}
+
+.video-description { 
+    max-width: 40%;
+    text-align: left;
+}
+
+.video-description h2 {
+    font-size: 1.5rem;
+}
+
+.video-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.video-container::before {
+    content: "▶";
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    background: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.video-container:hover::before {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*Style the backward/forward buttons */
+.control-button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+/* Backward button: Positioned on the left side */
+.arrow {
+    font-size: 50px;
+}
+/* Style the number "10" */
+.time {
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+}
+.control-button.backward {
+    top: 45%;
+    left: 80px; /* Moved inward from left edge */
+    transform: translateY(-50%);
+}
+
+.control-button.forward {
+    top: 45%;
+    right: calc(100% - 700px); /* Adjusted to bring button closer to center */
+    transform: translateY(-50%);
+}
+
+/* Button hover effect */
+.control-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Style the Testimonial Container */
+.testimonial-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    background: none;
+    padding: 20px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Testimonial Slide */
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.testimonial-slide {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+}
+
+.testimonial-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Profile Image Placeholder */
+.profile-img {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Text Styles */
+.testimonial-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.customer-name {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.customer-company {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Navigation Buttons */
+button.prev, button.next {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    color: black;
+}
+/* End of video section */
+
+/* Start of About Us Section */
+.our-history {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.our-history h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #FF914C;
+}
+.booking-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.our-history p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #036149;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Meet Our Staff Section */
+.meet-our-staff {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.meet-our-staff h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #FF914C;
+}
+
+/* Style the staff members container */
+.staff-members {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+/* Style for each staff member */
+.staff-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Staff image */
+.staff-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF914C;
+}
+
+.rank {
+    font-size: 1.2rem;
+    color: solid;
+}
+
+.activity {
+    font-size: 1rem;
+    color: #555;
+}
+/* End of About Us Section */
+
+/* Start of Footer Section */
+footer {
+    background-color: #036149;
+    padding: 40px 0;
+    color: #FF914C;
+    line-height: 32px;
+    font-size: 18px;
+    height: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    position: relative;
+}
+
+i {
+    font-size: 30px;
+    padding: 20px 10px;
+}
+
+i:first-of-type {
+    padding-left: 0;
+}
+
+.footer-nav a {
+    color: #FF914C;
+}
+.footer-logo {
+    position: absolute;
+    left: -10px;
+    top: -50px;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+}
+.footer-logo a { 
+    text-decoration: none;
+    outline: none;
+    border-bottom: none;
+}
+
+/* Style Footer Section Booking Form */
+.footer-booking {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.footer-booking .form-top,
+.footer-booking .form-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.footer-booking input,
+.footer-booking button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer-booking button[type="submit"],
+.footer-booking button[type="button"] {
+    background-color: #FF914C;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-booking button[type="submit"]:hover,
+.footer-booking button[type="button"]:hover {
+    background-color: #E6833B;
+}
+
+
+/* End of Footer Section */
+
+/* Media Queries for different screens */
+@media (max-width: 1024px) {
+    .header-ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lochquarry-activities {
+        flex-direction: column;
+    }
+    .card-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .card {
+        width: 100%;
+    }
+    .video-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .video-description {
+        max-width: 100%;
+    }
+    .control-button.backward {
+        left: 20px;
+    }
+    .control-button.forward {
+        right: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+    .footer-nav {
+        margin-top: 20px;
+    }
+    .staff-members {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .search-bar, .search-btn {
+        font-size: 0.8rem;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .lochquarry-activities {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .activity-img {
+        max-width: 100%;
+    }
+    .card-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .card {
+        width: 100%;
+    }
+    .video-container {
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    video {
+        max-width: 100%;
+    }
+    .video-description {
+        max-width: 100%;
+        text-align: center;
+    }
+    .control-button.backward {
+        left: 10px;
+    }
+    .control-button.forward {
+        right: 10px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center; /* Added for alignment */
+    }
+    .footer-logo {
+        position: static;
+        margin-bottom: 20px; /* Added for spacing */
+    }
+    .footer-nav {
+        margin-top: 20px; /* Added for spacing */
+    }
+    .staff-members {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-ul {
+        gap: 5px;
+    }
+    .search-bar {
+        width: 80px;
+    }
+    .logo img {
+        width: 120px;
+    }
+    .lochquarry-activities {
+        gap: 10px;
+    }
+    .activity-img {
+        max-width: 100%;
+    }
+    .card-container {
+        padding: 5px;
+    }
+    .video-container {
+        top: 5px;
+        left: 5px;
+        padding: 5px;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+    video {
+        max-width: 100%;
+    }
+    .video-description {
+        max-width: 100%;
+        text-align: center;
+    }
+    .control-button.backward {
+        left: 5px;
+    }
+    .control-button.forward {
+        right: 5px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        text-align: center;
+    }
+    .footer-logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+    .footer-nav {
+        margin-top: 20px;
+    }
+    .staff-members {
+        gap: 10px;
+    }
+}

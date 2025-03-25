@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lochquarry Outdoor Centre</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Menu Items on the left side -->
+       <nav class="nav-menu left-menu">
+           <ul class="header-ul">
+                <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="land.html">Land Based Activities</a></li>
+           </ul>
+       </nav>
+        <!-- Centered Logo -->
+       <div class="logo">
+           <a href="index.html"><img src="images/Lochquarry_Logo.png" alt="Lochquarry Outdoor Centre"></a>
+       </div>
+
+        <!-- Menu Items on the right side -->
+       <nav class="nav-menu right-menu">
+           <ul class="header-ul">
+               <li><a href="water.html">Water Based Activities</a></li>
+               <li><a href="rope.html">Rope Based Activities</a></li>
+           </ul>
+        <!-- Search bar at the right -->
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button type="submit" class="search-btn">&#128269;</button>
+            </div>
+       </nav>
+   </header>
+  
+   <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="images/Banner_Adventure_Awaits.JPG" alt="Lochquarry Outdoor Centre Adventure">
+            <button class="cta-button" id="book-now-btn">Book Now</button>
+        </div>     
+   
+         <!-- Rope based activities -->
+            <div class="lochquarry-activities">
+                <img class="activity-img" src="images/Climbing.jpg" alt="Rope Based Activities">
+                <div class="activity-content">
+                <h1>Rope Based Activities</h1>
+                    <ul>
+                        <li>Climbing: Challenge yourself by scaling natural rock faces or tacklig indoor walls.</li>
+                        <li>Pole Climbing: Climb high and conquer the pole with confidence</li>
+                        <li>Abseiling: Drop into adventure as you abseil down sheer rock wall with breathtaking views.</li>
+                        <li>Zip Lining: Fast, fun and exhilarating zip-lining at it best.</li>
+                        <li>Via Ferrata: Traverse mountain peaks with fixed cables, combining climbing and hiking.</li>
+                        <li>Wildlife Watching (Observing animals in their natural habitat) and much more!</li>
+                        <li>Slacklining: Test your balance by walking on a flexible rope or webbing stretched between two points—like a low tightrope!</li>
+                    </ul>
+                </div>
+            </div>
+        <!-- Customer reviews -->
+        <div class="testimonial-container">
+            <button class="prev">&#10094;</button>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="profile-img"></div>
+                        <p class="testimonial-text">"It was an unforgetable experience with Lochquarry, thank you very much guys for making our trip so memorable"</p>
+                        <h3 class="customer-name">John Doe</h3>
+                        <p class="customer-company">ABC Ltd.</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="profile-img"></div>
+                        <p class="testimonial-text">"A fantastic experience from start to finish!"</p>
+                        <h3 class="customer-name">Hannah Jacson</h3>
+                        <p class="customer-company">ABC School.</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="profile-img"></div>
+                        <p class="testimonial-text">"Highly recommended! Great service and support."</p>
+                        <h3 class="customer-name">Mike Johnson</h3>
+                        <p class="customer-company">XYZ Company</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+    </main>
+  
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="images/Lochquarry_Logo.png" alt="Lochquarry Logo">
+                </a>
+            </div>
+            <div class="footer-address">
+                <p>123 Adventure Road</p>
+                <p>Glasgow, Scotland</p>
+                <p>G1 1NY</p>
+                <p>+44 (0)141 xxx xxxx</p>
+            </div>
+            <div class="footer-times">
+                <p>OPENING TIMES</p>
+                <p>Monday-Friday 08:00am-06:00pm</p>
+                <p>Saturday-Sunday 08:00am-05:00pm</p>
+            </div>
+            <div class="footer-general">
+                <p>GENERAL ENQUIRIES</p>
+                <p>info@lochquarry.com</p>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="land.html">Land Activities</a></li>
+                    <li><a href="water.html">Water Activities</a></li>
+                    <li><a href="rope.html">Rope Activities</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+    
+    <!-- Footer Booking Form -->
+    <div class="footer-booking">
+        <h3 style="color: #FF914C;">Book Your Spot</h3>
+        <form id="booking-form">
+        <div class="form-top">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-bottom">
+            <input type="date" id="date" name="date">
+            <button type="submit" style="background-color: #FF914C; color: white;">Submit</button>
+            <button type="button" class="cancel-button" style="background-color: #FF914C; color: white;">Cancel</button>
+        </div>
+        </form>
+        </div>
+    </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
